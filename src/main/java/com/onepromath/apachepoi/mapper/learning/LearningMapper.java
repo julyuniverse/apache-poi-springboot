@@ -12,7 +12,7 @@ public interface LearningMapper {
             "from CHAPTER_2 c\n" +
             "         left join UNIT_2 u on u.CHAPTER_NO = c.NO\n" +
             "where level = #{level}\n" +
-            "group by c.level, c.chapter_seq, u.unit_seq limit 1;\n")
+            "group by c.level, c.chapter_seq, u.unit_seq;\n")
     @Results(id="levelChapterSeqUnitSeq", value = {
             @Result(property = "level", column = "level"),
             @Result(property = "chapterSeq", column = "chapter_seq"),
