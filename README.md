@@ -15,4 +15,7 @@
     - Lombok
     - Thymeleaf
 
+## 기능
+- 학습 데이터 csv 파일로 다운로드
+
 ## Update log
